@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic');
+@import url('https://fonts.googleapis.com/css?family=Calibri');
 
 * {
-  font-family: 'Calibri';
+  font-family: 'Calibri', sans-serif;
   color: #141c3a;
 }
 
