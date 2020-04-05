@@ -18,6 +18,7 @@
   top: 44px;
   left: 20px;
   width: 0;
+  z-index: 1000;
 }
 .tooltip:before {
   background: rgba(0, 0, 0, 0.75);
@@ -28,6 +29,7 @@
   padding: 6px 10px;
   top: 50px;
   white-space: nowrap;
+  z-index: 1000;
 }
 
 /* the animations */
