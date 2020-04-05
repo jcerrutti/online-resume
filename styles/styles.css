@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic');
+
+* {
+  font-family: 'Calibri';
+  color: #141c3a;
+}
+
+body {
+  padding-bottom: 2em;
+  font-size: 20px;
+}
+
+.main {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.header .name {
+  font-size: 5em;
+  margin: 0.4em 0 0.1em;
+  display: inline-block;
+}
+
+.profile-links img {
+  width: 30px;
+}
+
+.profile-links a {
+  display: inline-block;
+}
+
+.role {
+  margin-top: 0;
+}
+
+.description p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+ul.technologies {
+  padding-left: 0;
+}
+
+.technologies li {
+  display: inline-block;
+}
+
+.technologies img {
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+}
+
+img .small {
+  width: auto;
+}
+
+.contact {
+  text-align: center;
+  transition: 0.3s;
+}
+
+.contact :hover {
+  color: #205d86;
+}
