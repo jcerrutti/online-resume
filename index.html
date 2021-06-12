@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="stylesheet" href="./styles/normalize.css" />
   <link rel="stylesheet" href="./styles/styles.css" />
   <link rel="stylesheet" href="./styles/responsive.css" />
   <link rel="stylesheet" href="./styles/tooltips.css" />
   <link rel="stylesheet" href="./styles/experience.css" />
+  <link rel="stylesheet" href="./styles/dark-mode.css" />
   <link rel="shortcut icon" href="./favicons/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="57x57" href="./favicons/apple-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png">
@@ -25,36 +27,42 @@
   <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
   <meta name="viewport" content="width=device-width">
-  <meta name="description" content="Juan Cerrutti. JavaScript Enthusiastic Developer."
-  <meta property="og:title" content="Juan Cerrutti">
+  <meta name="description" content="Juan Cerrutti. JavaScript Enthusiastic Developer." <meta property="og:title"
+    content="Juan Cerrutti">
   <meta property="og:description" content="My passion is to solve problems, I'm always trying to find the best path to achieve a solution. No matter what
   technology, if I don't know about it, I will be happy to learn new things if at the end of the day that helps.">
   <meta property="og:url" content="https://juancerrutti.me">
   <title>Juan Cerrutti / JavaScript Developer</title>
 </head>
 
-<body class="main">
+<body id="body" class="main">
   <div class="header">
+    <div class="dark-mode-container">
+      <button id="darkToggle" class="dark-mode-toggle" onclick="toggleDarkMode()">
+        <img src="./assets/moon.svg">
+      </button>
+    </div>
     <h1 class="name">Juan <br> Cerrutti</h1>
     <span class="profile-links">
+      <a href="mailto:jicerrutti@gmail.com" target="blank">
+        <img src="./assets/gmail.svg" alt="send email">
+      </a>
       <a href="https://www.linkedin.com/in/juancerrutti" target="blank">
         <img src="./assets/linkedin.svg" alt="linkedin image">
       </a>
       <a href="https://github.com/jcerrutti" target="blank">
-        <img src="./assets/github.svg" alt="github image">
-      </a>
-      <a href="https://medium.com/@jicerrutti" target="blank">
-        <img src="./assets/medium.svg" alt="medium image">
+        <img src="./assets/github-dark.svg" alt="github image">
       </a>
     </span>
-    <h2 class="role">JavaScript Developer</h3>
+    <h2 class="role">JavaScript Developer</h2>
   </div>
   <div class="description">
     <p>
       My passion is to solve problems, I'm always trying to find the best path to achieve a solution. No matter what
-      technology, if I don't know about it, I will be happy to learn new things if at the end of the day that helps.
+      technology, I will be happy to learn new things if at the end of the day that helps.
       <br>
-      I'm specialized on React and Angular, working on big projects, using server-side rendering strategies and Node.js
+      I'm specialized on React, React Native and Angular, working on big projects, using server-side rendering
+      strategies and Node.js
       for backend solutions.
     </p>
   </div>
@@ -62,39 +70,57 @@
     <h2>Skills</h2>
     <ul class="technologies">
       <li class="tooltip expand" data-title="JavaScript">
-        <img src="./assets/javascript.svg" alt="">
+        <img src="./assets/javascript.svg" alt="JavaScript">
       </li>
       <li class="tooltip expand" data-title="TypeScript">
-        <img src="./assets/typescript.svg" alt="">
+        <img src="./assets/typescript.svg" alt="TypeScript">
       </li>
-      <li class="tooltip expand" data-title="NodeJs">
-        <img src="./assets/nodejs.svg" alt="">
-      </li>
-      <li class="tooltip expand" data-title="React">
-        <img src="./assets/react.svg" alt="">
+      <li class="tooltip expand" data-title="React / React Native">
+        <img src="./assets/react.svg" alt="React">
       </li>
       <li class="tooltip expand" data-title="Angular">
-        <img src="./assets/angular.svg" alt="">
+        <img src="./assets/angular.svg" alt="Angular">
       </li>
       <li class="tooltip expand" data-title="Vue">
-        <img src="./assets/vue.svg" alt="">
+        <img src="./assets/vue.svg" alt="Vue">
+      </li>
+      <li class="tooltip expand" data-title="NodeJs">
+        <img src="./assets/nodejs.svg" alt="NodeJs">
       </li>
       <li class="tooltip expand" data-title="Redux">
-        <img src="./assets/redux.svg" alt="">
-      </li>
-      <li class="tooltip expand" data-title="MongoDB">
-        <img src="./assets/mongodb.svg" alt="">
+        <img src="./assets/redux.svg" alt="Redux">
       </li>
   </div>
   <div class="experience">
     <h2>Experience</h2>
     <div class="job-content">
       <div class="company-name">
-        <img class="logo big" src="./assets/meli.svg" alt="Mercado Libre">
-        <span class="date">Jun 2019 / Present</span>
+        <img class="logo big" src="./assets/ring.svg" alt="Ring">
+        <span class="date">Aug 2020 / Mar 2021 - Contractor</span>
       </div>
       <div class="description">
-        Working as Frontend Software Engineer on Mercado Libre Credits.
+        <h4>Working at Ring.com as Software Engineer</h4>
+
+        <p>Building the Always Home Cam app with React Native and GraphQL (Apollo Client).</p>
+        <ul>
+          <li>I developed a configuration screen on the app that allows users to use the beta release adapting the
+            environment for the desired requirements. It resets all the APIs configurations and initializes the app with
+            the selected environment.</li>
+          <li>I Implemented a suite of testing (unit and e2e) from scratch. Using react-native-testing-library and
+            Appium.</li>
+          <li>Built the Events History view, similar to the existing Ring app. In this case, taking into account the
+            drone events.</li>
+        </ul>
+      </div>
+    </div>
+    <h2>Experience</h2>
+    <div class="job-content">
+      <div class="company-name">
+        <img class="logo big" src="./assets/meli.svg" alt="Mercado Libre">
+        <span class="date">Jun 2019 / Jul 2020</span>
+      </div>
+      <div class="description">
+        <h4>Frontend Software Engineer on Mercado Libre Credits.</h4>
         <ul>
           <li>Led a new initiative where we added new functionalities to a widget on the web app of Mercado
             Credits, involving the deployment for three countries, and organizing the
@@ -103,6 +129,15 @@
           <li>Analyze metrics and understand how features impacts on customers.</li>
         </ul>
       </div>
+
+      <div class="referal">"
+        It was a pleasure to work together with Juan. He is an experienced developer with a deep understanding of
+        Javascript and the latest frontend technologies, from whom I have learned a lot. Additionally, I highlight his
+        attitude of always being available to help his colleagues in solving problems. He is a great professional and an
+        excellent person."
+        <br>
+        <span class="referal-author">- Lucas Madrazo, Senior Software Engineer, Mercado Libre.</span>
+      </div>
     </div>
     <div class="job-content">
       <div class="company-name">
@@ -110,7 +145,8 @@
         <span class="date">Feb 2018 / Jun 2019</span>
       </div>
       <div class="description">
-        Worked as Frontend Software Engineer on McAfee MVISION EDR, responsible for designing and implementing features.
+        <h4>Worked as Frontend Software Engineer on McAfee MVISION EDR, responsible for designing and implementing
+          features.</h4>
         <ul>
           <li>Take the lead to move to a new Angular 6 application, implementing a new metrics module for the project.
           </li>
@@ -133,7 +169,7 @@
         <span class="date">Aug 2017 / Jan 2018</span>
       </div>
       <div class="description">
-        Worked as Frontend Developer for multiple clients.
+        <h4>Worked as Frontend Developer for multiple clients.</h4>
         <ul>
           <li>Responsible for setting up the developer environment on a new project, designed the frontend architecture
             and accomplished the whole functionality. Worked under pressure and delivered successfully a new application
@@ -150,7 +186,7 @@
         <span class="date">Apr 2016 / Jul 2017</span>
       </div>
       <div class="description">
-        Worked for Deloitte’s account on multiple projects.
+        <h4>Worked for Deloitte’s account on multiple projects.</h4>
         <ul>
           <li>Staffit: Implemented generic components on a new Angular2 solution, such as modals, buttons, tables, while
             implementing new features.
@@ -172,10 +208,8 @@
       </div>
     </div>
   </div>
-  <div class="contact">
-    <a href="mailto:jicerrutti@gmail.com">Email Me</a>
-  </div>
-  </div>
+
+  <script src="./script.js"></script>
 </body>
 
 </html>

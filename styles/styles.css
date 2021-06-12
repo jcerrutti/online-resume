@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Calibri');
+@import url("https://fonts.googleapis.com/css?family=Calibri");
 
 * {
-  font-family: 'Calibri', sans-serif;
+  font-family: "Calibri", sans-serif;
   color: #141c3a;
 }
 
@@ -17,13 +17,17 @@ body {
 
 .header .name {
   font-size: 5em;
-  margin: 0.4em 0 0.1em;
+  margin: 0.1em 0 0.1em;
   display: inline-block;
 }
 
+.profile-links {
+  margin-left: 1em;
+}
+
 .profile-links img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-right: 10px;
 }
 
@@ -59,10 +63,26 @@ img .small {
 }
 
 .contact {
-  text-align: center;
-  transition: 0.3s;
+  font-size: 0.7em;
 }
 
 .contact :hover {
   color: #205d86;
+}
+
+.dark-mode-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-top: 1em;
+}
+
+.dark-mode-container button {
+  padding: 0;
+  cursor: pointer;
+}
+
+.dark-mode-toggle img {
+  width: 40px;
+  display: flex;
 }

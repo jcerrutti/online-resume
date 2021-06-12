@@ -7,5 +7,6 @@
   }
   .profile-links {
     display: block;
+    margin: 0;
   }
 }

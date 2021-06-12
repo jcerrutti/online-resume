@@ -1,0 +1,18 @@
+.dark {
+  background-color: #121212;
+}
+
+.dark * {
+  color: #eeeeee;
+}
+
+.dark .logo {
+  background: #e0e0e0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.dark .dark-mode-toggle {
+  background: #e0e0e0;
+  border-radius: 10px;
+}
