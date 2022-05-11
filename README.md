@@ -1,1 +1,1 @@
-# Online Resume on plain html
+# Online Resume on plain HTML
